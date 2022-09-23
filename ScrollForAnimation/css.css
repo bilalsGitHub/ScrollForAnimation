@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+
+.box {
+    margin: 10px;
+    background-color: yellowgreen;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px 5px yellow;
+    transform: translateX(400%);
+    transition: all 2s;
+}
+
+.box:nth-child(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+h2 {
+    font-size: 40px;
+}
